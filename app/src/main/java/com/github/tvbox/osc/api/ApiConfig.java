@@ -8,7 +8,7 @@ import android.util.Base64;
 
 import com.github.catvod.crawler.JarLoader;
 import com.github.catvod.crawler.JsLoader;
-import com.github.catvod.crawler.pyLoader;
+import com.github.catvod.crawler.PyLoader;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.crawler.python.IPyLoader;
 import com.github.tvbox.osc.R;
@@ -77,7 +77,7 @@ public class ApiConfig {
 
     private final JarLoader jarLoader = new JarLoader();
     private final JsLoader jsLoader = new JsLoader();
-    private final IPyLoader pyLoader =  new pyLoader();
+    private final IPyLoader pyLoader =  new PyLoader();
     private final String userAgent = "okhttp/3.15";
 
     private final String requestAccept = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9";

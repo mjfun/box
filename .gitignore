@@ -96,6 +96,8 @@ lint/tmp/
 
 # macOS
 .DS_Store
-
+*.idea
 *.hprof
 output-metadata.json
+keystore.properties
+*/*.jks

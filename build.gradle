@@ -2,6 +2,11 @@
 buildscript {
     ext.kotlin_version = "1.9.25"
     repositories {
+//        maven { url=uri ("https://maven.aliyun.com/repository/releases")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/google")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/central")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/gradle-plugin")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/public")}
         gradlePluginPortal()
         google()
         mavenCentral()
@@ -18,12 +23,17 @@ buildscript {
         // in the individual module build.gradle files
         classpath("com.android.tools:r8:8.5.35")
         classpath 'com.yanzhenjie.andserver:plugin:2.1.12'
-        classpath "com.chaquo.python:gradle:12.0.1"
+        classpath "com.chaquo.python:gradle:15.0.1"
     }
 }
 
 allprojects {
     repositories {
+//        maven { url=uri ("https://maven.aliyun.com/repository/releases")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/google")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/central")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/gradle-plugin")}
+//        maven { url=uri ("https://maven.aliyun.com/repository/public")}
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }

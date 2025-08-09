@@ -17,12 +17,12 @@ import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class pyLoader implements IPyLoader {
+public class PyLoader implements IPyLoader {
     private final PythonLoader pythonLoader;
     private final ConcurrentHashMap<String, Spider> spiders;
     private String lastConfig = null; // 记录上次的配置
 
-    public pyLoader() {
+    public PyLoader() {
         pythonLoader = PythonLoader.getInstance().setApplication(App.getInstance());
         spiders = new ConcurrentHashMap<>();
     }
